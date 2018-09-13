@@ -28,6 +28,7 @@ class Subscriber extends Api
         $params = [
             'automation' => $subscriber['automation'],
             'update_on_duplicate' => $subscriber['update_on_duplicate'],
+            'require_opt_in' => $subscriber['require_opt_in'],
             'tags' => $subscriber['tags'],
             'subscribers' => $this->getSubscriberParams($subscriber)
         ];
@@ -64,6 +65,7 @@ class Subscriber extends Api
         $params = [
             'automation' =>  $subscribers['automation'],
             'update_on_duplicate' => $subscribers['update_on_duplicate'],
+            'require_opt_in' => $subscriber['require_opt_in'],
             'tags' => $subscribers['tags']
         ];
 
